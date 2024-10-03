@@ -1,0 +1,26 @@
+import 'package:blott/core/constants/app_color.dart';
+import 'package:flutter/material.dart';
+
+class TScrollBarTheme {
+  TScrollBarTheme._();
+
+  //Light Scrollbar Theme
+  static ScrollbarThemeData lightScrollBarTheme = ScrollbarThemeData(
+    thumbVisibility: WidgetStateProperty.all(true),
+    trackVisibility: WidgetStateProperty.all(true),
+    trackColor: WidgetStateProperty.all(AppColor.grey100),
+    thumbColor: WidgetStateProperty.all(AppColor.grey300),
+    thickness: WidgetStateProperty.all(4),
+    radius: const Radius.circular(15),
+  );
+
+  //Dark Scrollbar Theme
+  static ScrollbarThemeData darkScrollBarTheme = ScrollbarThemeData(
+    thumbVisibility: WidgetStateProperty.all(true),
+    trackVisibility: WidgetStateProperty.all(true),
+    trackColor: WidgetStateProperty.all(AppColor.grey100),
+    thumbColor: WidgetStateProperty.all(AppColor.grey300),
+    thickness: WidgetStateProperty.all(4),
+    radius: const Radius.circular(15),
+  );
+}
