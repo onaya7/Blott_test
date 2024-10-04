@@ -1,12 +1,13 @@
+import 'package:blott/core/components/custom_circularavatar.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
-class Newscard extends StatelessWidget {
+class NewsCard extends StatelessWidget {
   final String imgPath;
   final String title;
   final String subtitle;
   final String date;
-  const Newscard({
+  const NewsCard({
     required this.imgPath,
     required this.title,
     required this.subtitle,
@@ -19,12 +20,14 @@ class Newscard extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.only(left: 24, top: 20, right: 24),
       child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          Image.asset(
-            imgPath,
-            width: 100,
-            height: 100,
-          ),
+          // Image.asset(
+          //   imgPath,
+          //   width: 100,
+          //   height: 100,
+          // ),
+          CustomCircularAvatar(imageUrl: imgPath),
           const Gap(16),
           Expanded(
             child: Column(

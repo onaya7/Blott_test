@@ -24,4 +24,9 @@ class AppColor {
   static const Color infoBorder = Color(0xFF1145D6);
   static const Color info = Color(0xFFE8EDFB);
   static const Color divider = Color(0xFFE1E6ED);
+
+  static const Color artboard = Color(0xFFF3F5F6);
+
+  static const Color textHeader = Color(0xFF313C49);
+  static const Color textBody = Color(0xFF5F738C);
 }

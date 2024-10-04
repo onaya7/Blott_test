@@ -6,6 +6,9 @@ class AppUrl {
   //Base URL
   static String baseUrl = Env.apiBaseUrl;
 
+  static String getNews({required String token}) =>
+      "https://finnhub.io/api/v1/news?category=general&token=$token";
+
   // Auth Endpoints ------------------------------------------------------------
 
   // Home Endpoints ------------------------------------------------------------

@@ -1,4 +1,5 @@
 import 'package:blott/core/local_data/model/devicedetails_model.dart';
+import 'package:blott/features/auth/data/models/user_model.dart';
 import 'package:blott/utils/logger.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:injectable/injectable.dart';
@@ -21,7 +22,6 @@ abstract class LocalDataStorage {
 
 class SavedJobsModel {}
 
-class UserModel {}
 
 @LazySingleton(as: LocalDataStorage)
 class LocalDataStorageImpl implements LocalDataStorage {

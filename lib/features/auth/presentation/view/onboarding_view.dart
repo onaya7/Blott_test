@@ -4,8 +4,11 @@ import 'package:blott/core/components/custom_inputfield.dart';
 import 'package:blott/core/components/custom_scaffold.dart';
 import 'package:blott/core/constants/app_color.dart';
 import 'package:blott/core/helpers/ui_helpers.dart';
+import 'package:blott/features/auth/data/models/user_model.dart';
+import 'package:blott/features/auth/presentation/bloc/auth_bloc.dart';
 import 'package:blott/utils/validators.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:gap/gap.dart';
 
 class OnboardingView extends StatefulWidget {
@@ -102,9 +105,16 @@ class _OnboardingViewState extends State<OnboardingView> {
               : AppColor.primary.withOpacity(0.5),
           shape: const CircleBorder(),
           onPressed: _formCompleted
-              ? () => UiHelpers.navigateToPageAndRemoveUntil(
+              ? () {
+                  context.read<AuthBloc>().add(AuthEvent.saveUser(
+                          user: UserModel(
+                        firstName: _firstNameController.text,
+                        lastName: _lastNameController.text,
+                      )));
+                  UiHelpers.navigateToPage(
                     RoutesManager.notificationRoute,
-                  )
+                  );
+                }
               : null,
           child: const Icon(
             Icons.arrow_forward_ios,
