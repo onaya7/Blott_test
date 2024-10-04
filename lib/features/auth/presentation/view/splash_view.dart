@@ -1,6 +1,8 @@
+import 'package:blott/config/navigators/routes_manager.dart';
 import 'package:blott/core/components/custom_scaffold.dart';
 import 'package:blott/core/constants/app_color.dart';
 import 'package:blott/core/constants/app_size.dart';
+import 'package:blott/core/helpers/ui_helpers.dart';
 import 'package:blott/core/injections/injection.dart';
 import 'package:blott/core/local_data/local_data_storage.dart';
 import 'package:blott/core/local_data/model/devicedetails_model.dart';
@@ -49,6 +51,7 @@ class _SplashViewState extends State<SplashView> {
     );
     await localDataStorage.setDeviceDetails(value: details);
     setState(() {});
+    UiHelpers.navigateToPageAndRemoveUntil(RoutesManager.onboardingRoute);
   }
 
   @override

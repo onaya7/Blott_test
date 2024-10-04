@@ -8,8 +8,8 @@ class TScrollBarTheme {
   static ScrollbarThemeData lightScrollBarTheme = ScrollbarThemeData(
     thumbVisibility: WidgetStateProperty.all(true),
     trackVisibility: WidgetStateProperty.all(true),
-    trackColor: WidgetStateProperty.all(AppColor.grey100),
-    thumbColor: WidgetStateProperty.all(AppColor.grey300),
+    trackColor: WidgetStateProperty.all(AppColor.text50),
+    thumbColor: WidgetStateProperty.all(AppColor.text500),
     thickness: WidgetStateProperty.all(4),
     radius: const Radius.circular(15),
   );
@@ -18,8 +18,8 @@ class TScrollBarTheme {
   static ScrollbarThemeData darkScrollBarTheme = ScrollbarThemeData(
     thumbVisibility: WidgetStateProperty.all(true),
     trackVisibility: WidgetStateProperty.all(true),
-    trackColor: WidgetStateProperty.all(AppColor.grey100),
-    thumbColor: WidgetStateProperty.all(AppColor.grey300),
+    trackColor: WidgetStateProperty.all(AppColor.text50),
+    thumbColor: WidgetStateProperty.all(AppColor.text500),
     thickness: WidgetStateProperty.all(4),
     radius: const Radius.circular(15),
   );

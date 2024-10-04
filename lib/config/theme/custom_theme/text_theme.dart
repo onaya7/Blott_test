@@ -5,129 +5,79 @@ class TTextTheme {
   TTextTheme._();
 
   //Light Text Theme
-  static TextTheme lightTextTheme = TextTheme(
-    headlineLarge: const TextStyle().copyWith(
-      fontSize: 24,
-      fontWeight: FontWeight.w500,
-      color: AppColor.black,
+  static TextTheme lightTextTheme = const TextTheme(
+    headlineLarge: TextStyle(
+      fontSize: 30,
+      fontWeight: FontWeight.w700,
+      color: AppColor.text900,
     ),
-    headlineMedium: const TextStyle().copyWith(
+    headlineMedium: TextStyle(
+      fontSize: 16,
+      fontWeight: FontWeight.w400,
+      color: AppColor.text500,
+    ),
+    titleLarge: TextStyle(
       fontSize: 20,
-      fontWeight: FontWeight.w500,
-      color: AppColor.black,
+      fontWeight: FontWeight.w400,
+      color: AppColor.text400,
     ),
-    headlineSmall: const TextStyle().copyWith(
+    bodyLarge: TextStyle(
+      fontSize: 24,
+      fontWeight: FontWeight.w700,
+      color: AppColor.text900,
+    ),
+    bodyMedium: TextStyle(
+      fontSize: 24,
+      fontWeight: FontWeight.w700,
+      color: AppColor.text500,
+    ),
+    bodySmall: TextStyle(
+      fontSize: 16,
+      fontWeight: FontWeight.w400,
+      color: AppColor.text500,
+    ),
+    labelMedium: TextStyle(
       fontSize: 16,
       fontWeight: FontWeight.w500,
-      color: AppColor.black,
-    ),
-    titleLarge: const TextStyle().copyWith(
-      fontSize: 16,
-      fontWeight: FontWeight.w400,
-      color: AppColor.black,
-    ),
-    titleMedium: const TextStyle().copyWith(
-      fontSize: 14,
-      fontWeight: FontWeight.w400,
-      color: AppColor.black,
-    ),
-    titleSmall: const TextStyle().copyWith(
-      fontSize: 12,
-      fontWeight: FontWeight.w400,
-      color: AppColor.black,
-    ),
-    bodyLarge: const TextStyle().copyWith(
-      fontSize: 16,
-      fontWeight: FontWeight.w400,
-      color: AppColor.black,
-    ),
-    bodyMedium: const TextStyle().copyWith(
-      fontSize: 14,
-      fontWeight: FontWeight.w400,
-      color: AppColor.black,
-    ),
-    bodySmall: const TextStyle().copyWith(
-      fontSize: 12,
-      fontWeight: FontWeight.w400,
-      color: AppColor.black,
-    ),
-    labelLarge: const TextStyle().copyWith(
-      fontSize: 10,
-      fontWeight: FontWeight.w400,
-      color: AppColor.black,
-    ),
-    labelMedium: const TextStyle().copyWith(
-      fontSize: 8,
-      fontWeight: FontWeight.w400,
-      color: AppColor.black,
-    ),
-    labelSmall: const TextStyle().copyWith(
-      fontSize: 6,
-      fontWeight: FontWeight.w400,
-      color: AppColor.black,
+      color: AppColor.text50,
     ),
   );
 
   // Dark Text Theme
-  static TextTheme darkTextTheme = TextTheme(
-    headlineLarge: const TextStyle().copyWith(
-      fontSize: 24,
-      fontWeight: FontWeight.w500,
+  static TextTheme darkTextTheme = const TextTheme(
+    headlineLarge: TextStyle(
+      fontSize: 30,
+      fontWeight: FontWeight.w700,
       color: AppColor.white,
     ),
-    headlineMedium: const TextStyle().copyWith(
+    headlineMedium: TextStyle(
+      fontSize: 16,
+      fontWeight: FontWeight.w400,
+      color: AppColor.white,
+    ),
+    titleLarge: TextStyle(
       fontSize: 20,
-      fontWeight: FontWeight.w500,
+      fontWeight: FontWeight.w400,
       color: AppColor.white,
     ),
-    headlineSmall: const TextStyle().copyWith(
+    bodyLarge: TextStyle(
+      fontSize: 24,
+      fontWeight: FontWeight.w700,
+      color: AppColor.white,
+    ),
+    bodyMedium: TextStyle(
+      fontSize: 24,
+      fontWeight: FontWeight.w700,
+      color: AppColor.white,
+    ),
+    bodySmall: TextStyle(
+      fontSize: 16,
+      fontWeight: FontWeight.w400,
+      color: AppColor.white,
+    ),
+    labelMedium: TextStyle(
       fontSize: 16,
       fontWeight: FontWeight.w500,
-      color: AppColor.white,
-    ),
-    titleLarge: const TextStyle().copyWith(
-      fontSize: 16,
-      fontWeight: FontWeight.w400,
-      color: AppColor.white,
-    ),
-    titleMedium: const TextStyle().copyWith(
-      fontSize: 14,
-      fontWeight: FontWeight.w400,
-      color: AppColor.white,
-    ),
-    titleSmall: const TextStyle().copyWith(
-      fontSize: 12,
-      fontWeight: FontWeight.w400,
-      color: AppColor.white,
-    ),
-    bodyLarge: const TextStyle().copyWith(
-      fontSize: 16,
-      fontWeight: FontWeight.w400,
-      color: AppColor.white,
-    ),
-    bodyMedium: const TextStyle().copyWith(
-      fontSize: 14,
-      fontWeight: FontWeight.w400,
-      color: AppColor.white,
-    ),
-    bodySmall: const TextStyle().copyWith(
-      fontSize: 12,
-      fontWeight: FontWeight.w400,
-      color: AppColor.white,
-    ),
-    labelLarge: const TextStyle().copyWith(
-      fontSize: 10,
-      fontWeight: FontWeight.w400,
-      color: AppColor.white,
-    ),
-    labelMedium: const TextStyle().copyWith(
-      fontSize: 8,
-      fontWeight: FontWeight.w400,
-      color: AppColor.white,
-    ),
-    labelSmall: const TextStyle().copyWith(
-      fontSize: 6,
-      fontWeight: FontWeight.w400,
       color: AppColor.white,
     ),
   );

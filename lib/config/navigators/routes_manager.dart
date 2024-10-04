@@ -8,10 +8,12 @@ class RoutesManager {
   //Onboarding
   static const String onboardingRoute = '/onboardingView';
 
-  //signin
-  static const String signinRoute = '/signinView';
+  //notification
+  static const String notificationRoute = '/notificationView';
 
-  //signup
+  //dashboard
+  static const String dashboardRoute = '/dashboardView';
+
 
   //forgotpassword
 

@@ -18,7 +18,7 @@ class App extends StatelessWidget {
           create: (context) => AuthBloc(),
         ),
       ],
-      child: MaterialApp(
+    child: MaterialApp(
         title: 'Traffik',
         debugShowCheckedModeBanner: false,
         locale: DevicePreview.locale(context),
@@ -27,7 +27,7 @@ class App extends StatelessWidget {
         darkTheme: AppTheme.darkTheme,
         navigatorKey: Keys.navigatorKey,
         onGenerateRoute: RoutesGenerator.onGenerateRoute,
-        initialRoute: RoutesManager.splashRoute,
+        initialRoute: RoutesManager.onboardingRoute,
       ),
     );
   }

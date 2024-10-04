@@ -11,7 +11,7 @@ class TCheckBoxTheme {
     checkColor: WidgetStateProperty.resolveWith((states) {
       if (states.contains(WidgetState.disabled)) {
         return Colors.grey;
-      }
+    }
       return Colors.white;
     }),
     fillColor: WidgetStateProperty.resolveWith((states) {

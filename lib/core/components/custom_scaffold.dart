@@ -12,6 +12,7 @@ class CustomScaffold extends StatelessWidget {
     this.appBar,
     this.bottomNavigationBar,
     this.extendBodyBehindAppBar = false,
+    this.floatingActionButton,
   });
   final Color? systemNavigationBarColor;
   final Color? statusBarColor;
@@ -22,15 +23,18 @@ class CustomScaffold extends StatelessWidget {
   final PreferredSizeWidget? appBar;
   final Widget? bottomNavigationBar;
   final bool extendBodyBehindAppBar;
+  final Widget? floatingActionButton;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       key: key,
-      extendBodyBehindAppBar: extendBodyBehindAppBar,
+      backgroundColor:
+          backgroundColor ?? Theme.of(context).scaffoldBackgroundColor,
       appBar: appBar,
       body: body,
       bottomNavigationBar: bottomNavigationBar,
+      floatingActionButton: floatingActionButton,
     );
   }
 }

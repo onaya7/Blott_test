@@ -1,3 +1,4 @@
+import 'package:blott/core/constants/app_color.dart';
 import 'package:flutter/material.dart';
 
 class TAppBarTheme {
@@ -8,16 +9,16 @@ class TAppBarTheme {
     elevation: 0,
     centerTitle: false,
     scrolledUnderElevation: 0,
-    backgroundColor: Colors.transparent,
-    surfaceTintColor: Colors.transparent,
+    backgroundColor: AppColor.white,
+    surfaceTintColor: AppColor.white,
     iconTheme: IconThemeData(
-      color: Colors.black,
+      color: AppColor.white,
     ),
     actionsIconTheme: IconThemeData(
-      color: Colors.black,
+      color: AppColor.white,
     ),
     titleTextStyle: TextStyle(
-      color: Colors.black,
+      color: AppColor.white,
       fontSize: 18,
       fontWeight: FontWeight.w600,
     ),
@@ -28,16 +29,16 @@ class TAppBarTheme {
     elevation: 0,
     centerTitle: false,
     scrolledUnderElevation: 0,
-    backgroundColor: Colors.transparent,
-    surfaceTintColor: Colors.transparent,
+    backgroundColor: AppColor.black,
+    surfaceTintColor: AppColor.black,
     iconTheme: IconThemeData(
-      color: Colors.white,
+      color: AppColor.black,
     ),
     actionsIconTheme: IconThemeData(
-      color: Colors.white,
+      color: AppColor.black,
     ),
     titleTextStyle: TextStyle(
-      color: Colors.white,
+      color: AppColor.black,
       fontSize: 18,
       fontWeight: FontWeight.w600,
     ),
