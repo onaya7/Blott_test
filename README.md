@@ -60,7 +60,7 @@ Here are the screenshots of the app in light and dark modes:
 
 ## Authors
 
-- **Samuel Ayano** - *Initial work* - [YourUsername](https://github.com/onaya7)
+- **Samuel Ayano** - *Initial work* - [Portfolio](https://github.com/onaya7)
 
 ## License
 
