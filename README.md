@@ -67,3 +67,8 @@ Here are the screenshots of the app in light and dark modes:
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
 
+## Download the APK
+
+You can download the APK file from [here](https://drive.google.com/file/d/1jupMUvCzZOzzk-ivy1-WFgbWZAeNU8xZ/view?usp=sharing).
+
+```
