@@ -55,8 +55,8 @@ The APK file will be stored in `build/app/outputs/flutter-apk/` directory.
 
 Here are the screenshots of the app in light and dark modes:
 
-- Light Mode: ![Light Mode](path/to/light_mode_screenshot.png)
-- Dark Mode: ![Dark Mode](path/to/dark_mode_screenshot.png)
+- Light Mode: ![Light Mode](assets/images/light_mode_screenshot)
+- Dark Mode: ![Dark Mode](assets/images/dark_mode_screenshot)
 
 ## Authors
 
