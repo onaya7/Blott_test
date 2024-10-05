@@ -26,7 +26,7 @@ class App extends StatelessWidget {
       ],
       child: ToastificationWrapper(
         child: MaterialApp(
-          title: 'Traffik',
+          title: 'Blott',
           debugShowCheckedModeBanner: false,
           locale: DevicePreview.locale(context),
           builder: DevicePreview.appBuilder,
